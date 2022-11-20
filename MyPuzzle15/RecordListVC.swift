@@ -12,7 +12,6 @@ class RecordListVC: UIViewController {
 
     var tableV = UITableView()
     let cellID = "TableCell"
-    
     var recordsArr = [Int]()
     
     func setUpNavItem() {
@@ -30,18 +29,11 @@ class RecordListVC: UIViewController {
     @objc func leftClicked(_ sender: UIBarButtonItem){
         navigationController?.popViewController(animated: true)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
-        
-        
         setUpNavItem()
-        
-        
         view.addSubview(tableV)
-        
         tableV.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.left.right.bottom.equalTo(0)
@@ -57,12 +49,7 @@ class RecordListVC: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    func setConstaints() {
-       
-    }
-
 }
-
 extension RecordListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recordsArr.count
