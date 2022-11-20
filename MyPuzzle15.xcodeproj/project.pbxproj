@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		D5BADB8F2920C9C200F70D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BADB8D2920C9C200F70D0A /* Main.storyboard */; };
 		D5BADB912920C9C600F70D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BADB902920C9C600F70D0A /* Assets.xcassets */; };
 		D5BADB942920C9C600F70D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BADB922920C9C600F70D0A /* LaunchScreen.storyboard */; };
+		D5BADB9C2923F3DE00F70D0A /* RecordListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BADB9B2923F3DE00F70D0A /* RecordListVC.swift */; };
+		D5BADB9E2923F4CF00F70D0A /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BADB9D2923F4CF00F70D0A /* TableCell.swift */; };
+		EF8BFE9B777CB861EB64FEE8 /* Pods_MyPuzzle15.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87958A7E3B22791100663A6B /* Pods_MyPuzzle15.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87958A7E3B22791100663A6B /* Pods_MyPuzzle15.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPuzzle15.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B336BF1079DD1356BB4337D4 /* Pods-MyPuzzle15.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPuzzle15.debug.xcconfig"; path = "Target Support Files/Pods-MyPuzzle15/Pods-MyPuzzle15.debug.xcconfig"; sourceTree = "<group>"; };
+		C29A0E656A6E4C3E72EC64B9 /* Pods-MyPuzzle15.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPuzzle15.release.xcconfig"; path = "Target Support Files/Pods-MyPuzzle15/Pods-MyPuzzle15.release.xcconfig"; sourceTree = "<group>"; };
 		D5BADB842920C9C200F70D0A /* MyPuzzle15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPuzzle15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BADB872920C9C200F70D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BADB892920C9C200F70D0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		D5BADB902920C9C600F70D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5BADB932920C9C600F70D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5BADB952920C9C600F70D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BADB9B2923F3DE00F70D0A /* RecordListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListVC.swift; sourceTree = "<group>"; };
+		D5BADB9D2923F4CF00F70D0A /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8BFE9B777CB861EB64FEE8 /* Pods_MyPuzzle15.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF6770F8EA20D913648DFA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B336BF1079DD1356BB4337D4 /* Pods-MyPuzzle15.debug.xcconfig */,
+				C29A0E656A6E4C3E72EC64B9 /* Pods-MyPuzzle15.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		24AD62A1D4F0F2EA30C19676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87958A7E3B22791100663A6B /* Pods_MyPuzzle15.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5BADB7B2920C9C200F70D0A = {
 			isa = PBXGroup;
 			children = (
 				D5BADB862920C9C200F70D0A /* MyPuzzle15 */,
 				D5BADB852920C9C200F70D0A /* Products */,
+				0BF6770F8EA20D913648DFA0 /* Pods */,
+				24AD62A1D4F0F2EA30C19676 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				D5BADB902920C9C600F70D0A /* Assets.xcassets */,
 				D5BADB922920C9C600F70D0A /* LaunchScreen.storyboard */,
 				D5BADB952920C9C600F70D0A /* Info.plist */,
+				D5BADB9B2923F3DE00F70D0A /* RecordListVC.swift */,
+				D5BADB9D2923F4CF00F70D0A /* TableCell.swift */,
 			);
 			path = MyPuzzle15;
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5BADB982920C9C600F70D0A /* Build configuration list for PBXNativeTarget "MyPuzzle15" */;
 			buildPhases = (
+				7A10319894EB637008283A5A /* [CP] Check Pods Manifest.lock */,
 				D5BADB802920C9C200F70D0A /* Sources */,
 				D5BADB812920C9C200F70D0A /* Frameworks */,
 				D5BADB822920C9C200F70D0A /* Resources */,
+				3320E96AA5D582029FE9983E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +135,7 @@
 				};
 			};
 			buildConfigurationList = D5BADB7F2920C9C200F70D0A /* Build configuration list for PBXProject "MyPuzzle15" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3320E96AA5D582029FE9983E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyPuzzle15/Pods-MyPuzzle15-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyPuzzle15/Pods-MyPuzzle15-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyPuzzle15/Pods-MyPuzzle15-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A10319894EB637008283A5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyPuzzle15-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5BADB802920C9C200F70D0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5BADB9E2923F4CF00F70D0A /* TableCell.swift in Sources */,
 				D5BADB8C2920C9C200F70D0A /* ViewController.swift in Sources */,
+				D5BADB9C2923F3DE00F70D0A /* RecordListVC.swift in Sources */,
 				D5BADB882920C9C200F70D0A /* AppDelegate.swift in Sources */,
 				D5BADB8A2920C9C200F70D0A /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +358,7 @@
 		};
 		D5BADB992920C9C600F70D0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B336BF1079DD1356BB4337D4 /* Pods-MyPuzzle15.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,11 +367,12 @@
 				DEVELOPMENT_TEAM = T7C6N2U8Z3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPuzzle15/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +388,7 @@
 		};
 		D5BADB9A2920C9C600F70D0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29A0E656A6E4C3E72EC64B9 /* Pods-MyPuzzle15.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,11 +397,12 @@
 				DEVELOPMENT_TEAM = T7C6N2U8Z3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPuzzle15/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
